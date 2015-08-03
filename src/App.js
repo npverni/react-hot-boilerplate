@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+var React      = require('react');
+var HelloWorld = require('./components/HelloWorld.jsx');
 
-export default class App extends Component {
-  render() {
-    return (
-      <h1>Hello, world.</h1>
-    );
-  }
-}
+React.render(
+  <HelloWorld />,
+  document.getElementById('root')
+);
